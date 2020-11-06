@@ -1,0 +1,11 @@
+@import "colors";
+
+@mixin default-text {
+  color: $textColor;
+  font-size: 48px;
+}
+
+@mixin small-text {
+  color: $textColor;
+  font-size: 28px;
+}

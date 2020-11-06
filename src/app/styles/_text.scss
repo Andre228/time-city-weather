@@ -1,0 +1,15 @@
+@import "colors";
+@import "mixins";
+
+.page-text-link {
+  @include default-text;
+  cursor: pointer;
+  transition: .3s;
+  &.link-small-text {
+    @include small-text;
+  }
+  &:hover {
+    color: lighten($pageTextLinkColor, 10%);
+    transform: scale(1.2);
+  }
+}
